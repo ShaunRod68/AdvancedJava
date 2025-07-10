@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Management</title>
+</head>
+<body>
+<h1>Book Management System</h1>
+
+<table width="100%">
+    <tr>
+        <td width="60%" valign="top">
+            <h2>Show Books</h2>
+            <iframe name="bookTableFrame" src="show" width="100%" height="300px" frameborder="1"></iframe>
+        </td>
+
+        <td width="40%" valign="top">
+            <h2>Add Book</h2>
+            <form action="add" method="post">
+                <label>Book Name:<br>
+                    <input type="text" name="name" required>
+                </label><br><br>
+                <label>Author:<br>
+                    <input type="text" name="author" required>
+                </label><br><br>
+                <label>Progress:<br>
+                    <select name="progress">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Done">Done</option>
+                    </select>
+                </label><br><br>
+                <input type="submit" value="Add Book">
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
