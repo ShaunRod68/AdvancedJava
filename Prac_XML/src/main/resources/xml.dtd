@@ -1,0 +1,7 @@
+<!ELEMENT Marvel (Avengers)*>
+        <!ELEMENT Avengers (Avenger)*>
+        <!ELEMENT Avenger (#PCDATA)>
+        <!ATTLIST Avenger
+                Id CDATA #IMPLIED
+                id CDATA #IMPLIED
+                name CDATA #REQUIRED>
